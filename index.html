@@ -18,7 +18,7 @@
     <!-- navigation start -->
     <nav>
         <section>
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg bg-light  shadow-lg">
                 <div class="container">
                     <a class="navbar-brand text-dark fw-bolder fs-2" href="#">
                         <span class="text-warning">Edu</span>
@@ -32,30 +32,55 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                                <a class="nav-link " aria-current="page" href="#banner">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Courses</a>
+                                <a class="nav-link" href="#courses">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Deals</a>
+                                <a class="nav-link" href="#footer">Deals</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Success</a>
+                                <a class="nav-link" href="#trusted">Success</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#faq_Question">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Register</a>
+                                <a class="nav-link" href="#join">Register</a>
                             </li>
 
 
                         </ul>
-                        <form class="d-flex " role="search">
+                        <div class="d-flex ">
 
-                            <button class="btn btn-outline-success" type="submit">Register</button>
-                        </form>
+                            <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Register</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Read clearly</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            You can register here using your email and phone number to get reguler
+                                            updates
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -148,7 +173,7 @@
         </section>
         <!-- banner end -->
         <!-- courses start -->
-        <section class="container my-5">
+        <section class="container my-5" id="courses">
             <h2 class="text-center pt-4 fw-bolder">Discover Our Popular <br> Courses</h2>
             <p class="text-center pb-5">It is a long established fact that a reader will be distracted by the readable
                 <br> content of a page when looking at its layout.
@@ -257,7 +282,7 @@
         <!-- courses end -->
 
         <!-- Ready to join start -->
-        <section class="container my-5 ">
+        <section class="container my-5 " id="join">
             <div class="row bg-primary p-5 rounded-3">
                 <div class="col-lg-7 col-md-12 text-white text-md-center col-sm-12  text-sm-center">
                     <h2>Ready to join ?</h2>
@@ -355,7 +380,7 @@
                                 </div>
                             </div>
                             <!-- three -->
-                            <div class="accordion-item">
+                            <div class="accordion-item" id="faq_Question">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
@@ -403,7 +428,7 @@
         </section>
         <!-- FAQ Questions end -->
         <!-- Trusted  companies start -->
-        <section class="container my-5 d-none d-lg-block d-xl-block d-xxl-block">
+        <section class="container my-5 d-none d-lg-block d-xl-block d-xxl-block" id="trusted">
             <h2 class="text-center py-4 fw-bolder">Trusted by over 800+ companies</h2>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -422,7 +447,7 @@
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <footer class="container my-5">
+    <footer class="container my-5" id="footer">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center text-white bg-dark py-5 rounded-1">
                 <h1> <span class="text-warning">Edu </span> Hub</h1>

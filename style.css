@@ -1,0 +1,17 @@
+/* #banner #carouselExampleFade .carouselExampleFade .carousel-item img{
+    position: relative !important;
+    z-index: 1 !important;
+}
+#banner #carouselExampleFade .carouselExampleFade .carousel-item img::before{
+    background: #000000 !important;
+    position: absolute  !important;
+    content: ' ' !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: #000000 !important;
+    z-index: -1 !important;
+} */
+
+/* .carousel-inner::after{
+    background: rgba(0, 0, 0, 0.733);
+} */
